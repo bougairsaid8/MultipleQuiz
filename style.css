@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+}
+body{
+    background: #fffb01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20vh;
+}
+.container{
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px gray;
+}
+h3,h2,h1{
+    width: 100%;
+    font-style: italic;
+    text-shadow: 1px 1px 1px gray;
+    text-align: center;
+}
+h3{
+    text-align: right;
+    font-size: 20px;
+    color: green;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+input,button{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 8vh;
+    font-size: 25px;
+    font-weight:500;
+}
+input{
+    border: 3px solid green;
+    outline: none;
+}
+input[type="number"] {
+    appearance: textfield;
+  }
+input:focus{
+    border-color: greenyellow;
+}
+button {
+    margin-top: 30px;
+    color: #fff;
+    background: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background: rgb(40, 153, 40);
+    transition:all 200ms ease-in-out;
+}
+@media screen and (min-width:500px) {
+    .container{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:100px) {
+    .container{
+        width: 40%;
+    }
+}
